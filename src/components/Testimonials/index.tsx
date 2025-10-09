@@ -10,7 +10,7 @@ import {
 
 const Testimonials: React.FC = () => {
   return (
-    <Section>
+    <Section aria-label="Seccion de testimonios de suscriptores">
       <Title>Lo que dicen nuestros suscriptores</Title>
 
       <TestimonialList>

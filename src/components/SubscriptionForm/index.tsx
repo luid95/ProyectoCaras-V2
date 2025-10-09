@@ -47,7 +47,7 @@ const SubscriptionForm: React.FC = () => {
   };
 
   return (
-    <FormWrapper onSubmit={handleSubmit}>
+    <FormWrapper onSubmit={handleSubmit} aria-label="Formulario de suscripción">
       <Title>Suscríbete a CARAS</Title>
       <Subtitle>Recibe novedades y contenido exclusivo</Subtitle>
 
@@ -65,7 +65,9 @@ const SubscriptionForm: React.FC = () => {
         onChange={handleEmailChange}
         required
       />
-      <Button type="submit">Suscribirme</Button>
+      <Button type="submit" aria-label="Enviar formulario de suscripción">
+        Suscribirme
+      </Button>
 
       {submitted && <SuccessMessage>¡Gracias por suscribirte!</SuccessMessage>}
     </FormWrapper>

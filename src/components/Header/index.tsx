@@ -4,10 +4,12 @@ import { HeaderWrapper, Logo, Title, Subtitle } from "./styles.js";
 
 const Header: React.FC = () => {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper aria-label="Contenido de Header">
       <Logo src={logoCaras} alt="Logo CARAS" />
-      <Title>Revista CARAS</Title>
-      <Subtitle>Tu fuente de inspiración y estilo de vida</Subtitle>
+      <Title aria-label="Titulo de proyecto">Revista CARAS</Title>
+      <Subtitle aria-label="Mensaje de proyecto">
+        Tu fuente de inspiración y estilo de vida
+      </Subtitle>
     </HeaderWrapper>
   );
 };

@@ -12,8 +12,8 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <FooterContainer>
-      <SocialLinks>
+    <FooterContainer aria-label="Contenido de footer">
+      <SocialLinks aria-label="Links a redes sociales">
         <a
           href="https://facebook.com"
           target="_blank"
@@ -33,12 +33,12 @@ const Footer: React.FC = () => {
         </a>
       </SocialLinks>
 
-      <ContactInfo>
+      <ContactInfo aria-label="Informacion de contacto">
         <p>Contacto: contacto@caras.com</p>
         <p>Tel: (55) 1234 5678</p>
       </ContactInfo>
 
-      <Copyright>
+      <Copyright aria-label="Inofrmaion de copyright">
         &copy; {new Date().getFullYear()} CARAS. Todos los derechos reservados.
       </Copyright>
     </FooterContainer>
